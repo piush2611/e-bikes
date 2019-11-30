@@ -1,0 +1,266 @@
+* {
+    font-family: monospace;
+}
+
+.firstPart {
+    color: rgb(46, 125, 50);
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+hr {
+    color: rgb(133, 233, 133) ;
+}
+.firstPart h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 100px;
+    color: red;
+}
+.firstPart h1:hover {
+    color: green;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+}
+ a {
+    outline: none;
+    text-decoration: none;
+    color: green;
+}
+.firstPart p {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 200px;
+}
+.border-bottom:hover {
+    border-bottom: 2px solid green;
+}
+#secondPart {
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+#secondPart > img, #thirdPart > img {
+    width: 600px;
+}
+#secondPart  p, #thirdPart p {
+    font-size: 25px;
+    text-align: center;
+}
+#thirdPart p {
+    width: 600px;
+    padding-right: 200px;
+}
+#thirdPart {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 200px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+#fourthPart, #fourthPart1 {
+    display: grid;
+    margin: 50px 300px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 50px;   
+    cursor: pointer;
+}
+#lastPart  img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#lastPart  p {
+    float: left;
+    font-size: 20px;
+}
+ #lastPart div {
+    float: right;
+}
+#lastPart {
+    margin: 50px 300px;
+}
+form {
+    margin: 100px 600px;
+    
+}
+form input {
+    width: 95%;
+}
+form > fieldset {
+    margin-top: 20px;
+    background-color: rgb(133, 233, 133);
+    border-style: none;
+}
+form  button {
+    margin-top: 10px;
+    background-color: rgb(133, 233, 133);
+    border: 2px solid green;
+    border-radius: 30px;
+    margin-left: 260px;
+    padding: 10px 30px;
+}
+form button:hover {
+    background-color: white;
+    color: green;
+}
+form  legend {
+    font-size: 20px;
+}
+.cities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px 300px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.cities p::first-letter {
+    font-size: 40px;
+    color: green;
+}
+
+@media only screen and (max-width: 900px) {
+    #secondPart {
+        margin: 50px 80px;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr;
+    }
+    #fourthPart {
+        margin: 50px 80px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    #secondPart  p, #thirdPart p {
+        font-size: 15px;
+        text-align: center;
+    }
+    #secondPart > img, #thirdPart > img {
+        width: 300px;
+    }
+    #thirdPart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 50px 100px;
+    }
+    #thirdPart p {
+        width: 300px;
+        margin-left: 20px;
+    }
+    #lastPart {
+        margin: 50px 200px;
+        margin-bottom: 150px;
+    }
+    .firstPart h1 {
+        text-align: center;
+        padding-top: 150px;
+        font-size: 70px;
+        color: red;
+    }
+    .firstPart p {
+        text-align: center;
+        font-size: 35px;
+    }
+    .cities {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 20px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    p:last-child {
+        grid-column: 1/3;
+        text-align: center;
+    }
+    form {
+        margin: 50px 100px;
+    }
+    form button {
+        margin-left: 150px;
+    }
+    .firstPart {
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .firstPart {
+        height: 400px;
+    }
+}
+@media only screen and (max-width:600px) {
+
+    #secondPart {
+        margin: 50px 100px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .firstPart {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    #fourthPart {
+        margin: 50px 80px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+    }
+    #fourthPart1 {
+        margin: 50px 80px;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: 1fr;
+    }
+    #secondPart  p, #thirdPart p {
+        font-size: 10px;
+        text-align: center;
+    }
+    #secondPart > img, #thirdPart > img {
+        width: 200px;
+    }
+    #thirdPart {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 50px 100px;
+    }
+    #thirdPart p {
+        width: 200px;
+    }
+    #lastPart {
+        margin: 50px 150px;
+        margin-bottom: 150px;
+    }
+    .firstPart h1 {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 50px;
+        color: red;
+    }
+    .firstPart p {
+        text-align: center;
+        font-size: 25px;
+    }
+    form {
+        margin: 50px 50px;
+    }
+    form button {
+        margin-left: 80px;
+    }
+    nav  {
+        float: left;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
+
+
+
