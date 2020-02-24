@@ -73,6 +73,7 @@ h1 {
     grid-template-rows: repeat(2, 200px);
     grid-gap: 50px;   
     cursor: pointer;
+    text-align: center;
 }
 #lastPart  img {
     width: 50px;
@@ -140,6 +141,7 @@ form  legend {
         margin: 50px 80px;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr 1fr;
+        text-align: center;
     }
     #secondPart  p, #thirdPart p {
         font-size: 15px;
@@ -261,6 +263,3 @@ form  legend {
         margin-right: 5px;
     }
 }
-
-
-
